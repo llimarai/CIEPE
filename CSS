@@ -1,0 +1,29 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-image: url('https://files.tecnoblog.net/wp-content/uploads/2022/09/stable-diffusion-imagem.jpg');
+    background-position: center;
+    z-index: 0;
+    animation: animateBackground 10s linear infinite; 
+}
+
+@keyframes animateBackground {
+    0% { transform: scale(1.1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1.1); }
+}
